@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+
+<head>
+  <!-- Document Meta
+============================================= -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--IE Compatibility Meta-->
+  <meta name="author" content="wplly" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="construction html5 template" />
+  <link href="assets/images/favicon/favicon.ico" rel="icon" />
+
+  <!-- Fonts
+============================================= -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:100,200,300,400,500,600,700,800%7CDroid+Serif:400,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- Stylesheets
+============================================= -->
+  <link href="assets/css/external.css" rel="stylesheet" />
+  <!-- Extrnal CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Boostrap Core CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Style CSS -->
+
+  <!-- google traslate -->
+
+  <!-- <script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Document Title
+    ============================================= -->
+  <title>Sqlapio.com</title>
+
+  <style>
+    body {
+      /* overflow-y: hidden; */
+    }
+
+    section {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+      padding: 0 2rem;
+
+    }
+
+    section.active {
+      max-height: 100vh;
+      opacity: 1;
+      padding: 2rem;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+      transition: transform 0.3s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000eb;
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: bottom 0.4s ease;
+    }
+
+    .card:hover .overlay {
+      bottom: 0;
+    }
+
+    .overlay h3 {
+      margin: 0 0 10px;
+    }
+
+    .overlay p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .diagonal {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+
+    .fixed-footer {
+      position: fixed;
+      bottom: 20px;
+      /* right: 20px; */
+      background-color: transparent;
+      color: white;
+      padding: 10px 15px;
+      font-size: 14px;
+      z-index: 9999;
+    }
+
+    @media (max-width: 991px) {
+      .fixed-footer {
+        display: none;
+      }
+
+      .img-about {
+        display: none;
+      }
+
+      .contact-mb {
+        padding: 0 !important;
+      }
+
+    }
+
+    .superior-izquierda {
+      top: 4px;
+      left: 20px;
+    }
+
+    .footer-izquierda {
+      left: 20px;
+    }
+
+    .footer-derecha {
+      right: 20px;
+    }
+
+    .map {
+      height: 20vh;
+      filter: grayscale(100%) invert(92%) contrast(83%);
+    }
+  </style>
+</head>
+
+<body class="home">
+  <div class="preloader">
+    <div class="spinner">
+      <img class="img-responsive img-home-mb" src="assets\images/NewPage/cargando.png" alt="Background" style="width: 100%; padding-bottom: 20px;" />
+      <div class="bounce1">
+      </div>
+      <div class="bounce2">
+      </div>
+      <div class="bounce3">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Header
+============================================= -->
+  <header id="navbar-spy" class="full-header">
+    <nav id="primary-menu" class="navbar navbar-fixed-top style-1">
+      <div class="row">
+        <div class="container cont-nav" style="padding-left: 5%; width: 100%">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <img src="assets/images/logo/logo-light.png" alt="Yellow Hats" style="width: 200px;">   -->
+          </div>
+          <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1" style="padding-right: 20px;">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('inicio')" class="dropdown-toggle">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('nosotros')" class="dropdown-toggle">nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('servicios')" class="dropdown-toggle">servicios</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('proyectos')" class="dropdown-toggle">proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('contacto')" class="dropdown-toggle">contacto</a>
+              </li>
+            </ul>
+            <div class="module module-search pull-left" style="margin-top: 12px;">
+              <img width="40" src="assets/images/logo/language.png" alt="sqlapio">
+              <a href="https://sqlapio.com" class="dropdown-toggle"
+                style="color: #ffffff; font-weight: 700; padding-left: 6px ">ES</a>
+              <a href="https://en.sqlapio.com" class="dropdown-toggle"
+                style="color: #ffffff; font-weight: 700; padding-left: 7px ">EN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner
+============================================= -->
+  <section id="inicio" class="hero-2 active home-mb"
+    style="background-image: url(assets/images/NewPage/Diseño\ sin\ título.png); background-size: cover;">
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <img class="img-responsive img-home-mb" src="assets\images/NewPage/sqlapiotech.png" alt="Background"
+              style="width: 40%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="nosotros" class="hero-2" style="padding-top: 0px;">
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <img src="assets\images/NewPage/titulos.png" alt="Background" style="width: 60%; padding-bottom: 20px;" />
+              <p>
+                En un mundo cada vez más conectado, la tecnología impulsa el crecimiento y la eficiencia de los
+                negocios. En <strong>Sqlapio Technology</strong>,
+                desarrollamos software a medida, creando soluciones digitales <strong>innovadoras, eficientes y
+                  escalables</strong>.
+              </p>
+              <p>
+                Trabajamos con empresas de todos los tamaños, apoyando su <strong>transformación digital</strong> con
+                creatividad, estrategia y tecnología.
+                Nuestro equipo se enfoca en generar <strong>resultados reales</strong>, adaptándose a cada cliente y
+                creando soluciones que <strong> marcan la diferencia</strong>.
+              </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs"
+              style="display: flex; justify-content: flex-end;">
+              <img src="assets\images/NewPage/a.png" alt="Background" style="width: 90%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="hero-2" style="padding-top: 0px;">
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <img src="assets\images/NewPage/b.png" alt="Background" style="width: 90%;" />
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <img src="assets\images/NewPage/titulos2.png" alt="Background"
+                style="width: 60%; padding-bottom: 20px;" />
+
+              <p>
+                <strong>• Desarrollo Web y Móvil</strong> – Aplicaciones rápidas, seguras y escalables.<br>
+                <strong>• E-commerce</strong> – Tiendas en línea con integración de pagos.<br>
+                <strong>• Automatización y IA</strong> – Optimizamos procesos con inteligencia artificial.<br>
+                <strong>• Diseño UX/UI</strong> – Experiencias visuales atractivas y funcionales.<br>
+                <strong>• Mantenimiento y Soporte</strong> – Actualizaciones y optimización constante.<br>
+              </p>
+
+              <p>Creamos soluciones digitales que se adaptan a tus necesidades. 🚀</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="hero-2"
+    style="z-index: 2; padding: 0px; display: flex; flex-direction: column; height: 100vh; justify-content: center;">
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false}' style="margin-top: 30px;">
+      <div class="carousel-cell-1">
+        <!-- panel administrativo -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Panel Administrativo 📊</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Diseñado para gestionar de forma integral las ventas, clientes y personal, este sistema incorpora módulos 
+              avanzados de control de inventario y generación de reportes. Esto permite una visión clara y en tiempo real de 
+              los recursos, insumos y el desempeño general del negocio, facilitando la toma de decisiones y optimizando 
+              la gestión operativa diaria</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-2">
+        <!-- tienda -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Aplicación de Tienda 🏛</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Gestiona tu negocio de forma inteligente desde una sola plataforma.<br>
+              El sistema te permite registrar y administrar clientes, agendar citas con recordatorios automáticos, 
+              asignar servicios al personal, facturar eficientemente y controlar la distribución de productos dentro del equipo.<br>
+              Diseñado para mejorar la experiencia de tus usuarios y simplificar la operación diaria de tu 
+              tienda, todo desde una interfaz moderna, ágil y fácil de usar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-3">
+        <!-- page piedy -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Landing Page Piedy💻</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Este proyecto tiene como objetivo potenciar la imagen digital de la empresa, mostrar sus servicios de forma clara, atractiva y 
+              profesional, y crear canales de contacto directos y eficientes con sus clientes.<br>
+
+              Una herramienta estratégica pensada para generar confianza, atraer nuevos prospectos y convertir visitas en oportunidades comerciales reales.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-4">
+        <!-- page trx -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Landing Page TRX💻</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Este proyecto busca fortalecer la imagen digital de la empresa mediante una página web moderna y funcional, 
+              que comunique sus servicios de forma clara y atractiva, y facilite la interacción directa con sus clientes.<br>
+
+              Una solución pensada para mejorar la visibilidad en línea, captar nuevos clientes potenciales y transformar el tráfico web en oportunidades reales de negocio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-5">
+        <!-- trx sys -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+              <h3 style="color: #8a9597;">Gestión de Proyectos 💼🛠️</h3>
+              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+                Diseñado para gestionar de forma integral los proyectos de mantenimiento y climatización, este sistema incorpora módulos 
+                especializados para el seguimiento de actividades, control de recursos, personal técnico e inventario de equipos.<br>
+
+                Permite una visión clara y en tiempo real del avance de obras, consumo de insumos y desempeño operativo, facilitando la 
+                toma de decisiones técnicas y administrativas y optimizando cada fase del proceso, desde la planificación hasta la ejecución.
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-10">
+        <!-- infosis trx -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Gestión de Actividades y personal 👷🏻‍♂️👷🏻‍♀️</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Este sistema está diseñado para gestionar de forma integral las actividades y el personal técnico involucrado en labores de mantenimiento. 
+              Permite llevar el control por áreas, así como intervenciones específicas en sistemas eléctricos y de climatización, 
+              registrando el avance de cada trabajo.<br> 
+              Además, incorpora un sistema de control de asistencia mediante escaneo de código QR basado en geolocalización, 
+              lo que permite verificar en tiempo real la presencia del personal en el lugar de trabajo, garantizando mayor precisión 
+              y confiabilidad en la gestión operativa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-6">
+        <!-- sqlapio page -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
+              <h3 style="color: #8a9597;">Landing Page SQLapio 🏥💻</h3>
+              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+                Este proyecto tiene como propósito presentar un sistema médico moderno y confiable, diseñado para optimizar la
+                 gestión de pacientes, citas, historiales clínicos y procesos administrativos.<br>
+                La página web actúa como una vitrina digital que comunica claramente los beneficios del sistema, genera confianza en 
+                profesionales de la salud y facilita el contacto con clínicas o centros médicos interesados en digitalizar su operación.
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-7">
+        <!-- sql med -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">SQLapio Médico 🩺</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Optimiza la rutina diaria del profesional de salud.<br>
+              Con SQLapio Médico, los doctores pueden gestionar fácilmente la información de sus pacientes, registrar datos personales, 
+              historias clínicas, consultas y exámenes físicos, y generar informes detallados para cada atención.<br>
+              Una herramienta intuitiva y eficiente, diseñada para facilitar el trabajo clínico y mantener todo organizado en un solo lugar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-8">
+        <!-- sql pacientes -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
+              <h3 style="color: #8a9597;">SQLapio Paciente 👨‍⚕️</h3>
+              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+                Toda tu información médica, siempre a tu alcance.<br>
+  
+                Con SQLapio Paciente, los usuarios pueden acceder de forma segura a su historia clínica, 
+                consultas médicas, exámenes físicos y estudios indicados por el médico, incluyendo la fecha y hora de sus próximas citas.<br>
+  
+                Una plataforma pensada para que el paciente esté informado, conectado y en control de su salud.
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell-9">
+        <!-- checkmas -->
+        <div class="card">
+          <div class="overlay">
+            <img class="img-responsive" src="assets\images/NewPage/+check.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
+            <h3 style="color: #8a9597;">Gestión de Proyectos 🛠️</h3>
+            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
+              Optimiza el control total de tus proyectos técnicos desde una sola plataforma.<br>
+
+              Nuestro sistema está diseñado para empresas que gestionan obras de mantenimiento preventivo, correctivo y climatización, 
+              permitiendo un control preciso de cada etapa del proceso: desde la planificación y asignación de personal, hasta el 
+              seguimiento de actividades, inventario de equipos y análisis de costos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container" style="width: 90%; margin-top: 44px;">
+      <div class="carousel-panners"
+        data-flickity='{"wrapAround": true, "autoPlay": 2000, "pageDots": false}'>
+        <div class="carousel-panners-1"></div>
+        <div class="carousel-panners-2"></div>
+        <div class="carousel-panners-3"></div>
+        <div class="carousel-panners-4"></div>
+        <div class="carousel-panners-5"></div>
+        <div class="carousel-panners-6"></div>
+        <div class="carousel-panners-7"></div>
+      </div>
+    </div>
+  </section>
+  <section id="contacto" class="hero-2" style="z-index: 2; padding-top: 0px; background-image: url(assets/images/NewPage/Diseño\ sin\ título.png); background-size: cover;">
+    <div class="row contact-mb" style="padding: 0 8%;">
+      <div class="col-xs-12 col-sm-12 col-md-12" style="height: 100vh;display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+        <div class="col-xs-12 col-sm-12 col-md-12 widgets-contact" style="font-size: 12px; padding-top: 30px; padding-bottom: 0;">
+          <div class="widget" style="margin-top: 41px; padding-left: 0px !important;">
+            <div class="widget-contact-info" style="color: #fff; margin-top: 41px;">
+              <!-- <img src="assets/images/email.png" style="width: 60px;"> -->
+              <h4 class="text-capitalize" style="color: #fff; font-weight: bold; margin-left: 0px;">CORREO</h4>
+              <p class="font-heading text-uppercase" style="color: #fff; font-weight: 900; margin-left: 0px; font-size: 13px;">
+                <a href="mailto:soporte@sqlapio.com" style="color: #fff; font-weight: 900; margin-left: 0px;">soporte@sqlapio.com</a>
+              </p>
+            </div>
+          </div>
+          <hr style="color: #9e9e9e;">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h4 class="text-capitalize" style="color: #fff; font-weight: bold; margin-left: 0px;">NUESTRAS OFICINAS</h4>
+          <div class="col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
+              src="https://maps.google.com/maps?q=USA3785%20NW%2082%20AV%20SUITE%20215%20Doral%20FLORIDA%2033166&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+            <h4 style="color: #fff; margin-bottom: 0px;">ESTADOS UNIDOS</h4>
+            <hr style="color: #9e9e9e; margin-top: 0px;">
+            <span style="text-align: start; color: #fff;">
+              <i class="fa fa-map-marker" style="color: #fff;" aria-hidden="true"></i> <strong>Dirección:</strong> 3785
+              NW 82 AV SUITE 215 Doral FLORIDA 33166, ESTADOS UNIDOS
+            </span>
+            <span style="text-align: start; color: #fff;">
+              <br>
+              <br>
+              <i class="fa fa-phone" style="color: #fff;" aria-hidden="true"></i> <strong>Teléfono: </strong> +1
+              305.956.81.20
+            </span>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;" width="100%" height="350"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Xpress%20Macaracuay&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 style="color: #fff; margin-bottom: 0px;">VENEZUELA</h4>
+            <hr style="color: #9e9e9e; margin-top: 0px;">
+            <span style="text-align: start; color: #fff;">
+              <i class="fa fa-map-marker" style="color: #fff;" aria-hidden="true"></i> <strong>Dirección:</strong>
+              Centro Comercial Xpress - Macaracuay. Torre Principal, Oficina 7,
+              Piso 7 1071, Caracas Venezuela.
+            </span>
+            <span style="text-align: start; color: #fff;">
+              <br>
+              <br>
+              <i class="fa fa-phone" style="color: #fff;" aria-hidden="true"></i> <strong>Teléfono: </strong> +58 414
+              736.53.09 / +58 212 793.97.39
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <div class="fixed-footer superior-izquierda" style="z-index: 0">
+    <img src="assets/images/NewPage/sqlapiotech.png" style="width: 20%">
+  </div>
+
+  <!-- Footer 
+============================================= -->
+  <footer>
+    <div class="fixed-footer footer-derecha diagonal">
+      <span style="font-size: 10px;">© 2025 Copyright: All rights reserved.</span>
+    </div>
+    <div class="fixed-footer footer-izquierda">
+      <div class="widget-social-icon pull-none-xs text-center" style="display: flex; justify-content: center; flex-direction: column;">
+        <a href="#" onclick="openEmail()" target="_blank" style="margin-bottom: 8px; margin-left: 0px !important;">
+          <i class="fa fa-envelope"></i><i class="fa fa-envelope"></i>
+        </a>
+        <a href="#" target="_blank" style="margin-bottom: 8px; margin-left: 0px !important;">
+          <i class="fa fa-facebook"></i><i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" style="margin-left: 0px !important;">
+          <i class="fa fa-instagram"></i><i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Scripts
+============================================= -->
+
+  <script>
+
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll("section");
+
+      secciones.forEach(sec => {
+        sec.classList.remove("active");
+      });
+
+      const target = document.getElementById(id);
+      target.classList.add("active");
+
+      // Desplazar hacia la sección activa
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <script>
+    function openEmail() {
+      const email = "soporte@sqlapio.com";
+      const subject = "Solicitar Información";
+
+      // Intenta abrir Gmail en una nueva pestaña
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
+      window.open(gmailUrl, "_blank");
+
+      // Copia el correo al portapapeles como respaldo
+      navigator.clipboard.writeText(email).then(() => {
+        alert("Correo copiado al portapapeles. Si Gmail no se abre, pégalo manualmente en tu cliente de correo.");
+      }).catch(err => {
+        console.error("Error al copiar el correo: ", err);
+      });
+    }
+  </script>
+  <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/plugins.js?v=1.0.0"></script>
+  <script src="assets/js/functions.js?v=1.2.0"></script>
+
+  <!-- RS5.0 Core JS Files -->
+  <script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+  <script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript"
+    src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      jQuery("#slider1").revolution({
+        sliderType: "standard",
+        sliderLayout: "auto",
+        delay: 6000,
+        disableProgressBar: "on",
+        spinner: "off",
+        navigation: {
+          keyboardNavigation: "off",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation: "off",
+          onHoverStop: "off",
+          arrows: {
+            enable: false,
+          },
+          bullets: {
+            style: "slider-bullet",
+            enable: true,
+            hide_onmobile: false,
+            hide_onleave: false,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            hide_under: 0,
+            hide_over: 9999,
+            tmp: "<span></span>",
+            direction: "horizontal",
+            space: 5,
+            h_align: "center",
+            v_align: "center",
+            h_offset: 0,
+            v_offset: 280,
+          },
+        },
+        gridwidth: 1230,
+        gridheight: 100,
+      });
+    });
+  </script>
+</body>
+
+</html>
