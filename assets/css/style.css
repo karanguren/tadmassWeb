@@ -60,13 +60,13 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #828282;
+  color: #fff;
   line-height: 1.5;
   margin: 0;
 }
 
 .home {
-  background-color: #2f2f2f !important;
+  background-color: #fff !important;
   background-size: 100%;
 }
 
@@ -1448,7 +1448,7 @@ footer {
   top: 0;
   position: fixed;
   z-index: 99999;
-  background-color: #2f2f2f;
+  background-color: #ffff;
   overflow: hidden;
 }
 
@@ -1464,7 +1464,7 @@ footer {
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #8a9597;
+  background-color: # ;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -1580,11 +1580,11 @@ footer {
 /* Menu Level #1 */
 .navbar-nav > li:after {
   position: absolute;
-  top: 100%;
+  top: 100%;  
   left: 0;
   width: 100%;
   height: 2px;
-  background: #9e9e9e;
+  background: #0fc6ee;
   content: "";
   opacity: 0;
   -webkit-transition: all 0.3s ease;
@@ -1881,12 +1881,12 @@ footer {
 }
 
 .full-header .navbar-nav > li > a {
-  color: #ffffff;
+  color: #2f2f2f;
 }
 
 .full-header .module-search .search-icon i,
 .full-header .module-cart .cart-icon {
-  color: #ffffff;
+  color: #2f2f2f;
 }
 
 .full-header .module-search .search-icon i {
@@ -9556,7 +9556,7 @@ footer hr {
   /* line-height: 50px; */
   margin-bottom: 0;
   margin-left: 15px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .widgets-contact .widget-contact-icon {
@@ -9807,7 +9807,7 @@ footer hr {
 
   .widgets-contact .widget-contact-info p:last-child {
     font-size: 12px;
-    width: 80%;
+    /* width: 80%; */
     margin-left: 96px;
   }
 
@@ -10617,203 +10617,256 @@ div#slider figure {
 
 .carousel {
   background: transparent;
-  height: 55vh;
+  height: 30vh;
 }
 
  .carousel-cell-1 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/1.png);
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/1.png);
+  counter-increment: carousel-cell;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-2 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/2.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/2.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-3 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/3.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/3.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-4 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/4.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/4.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-5 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/5.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/5.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-6 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/6.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/6.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-7 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/7.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/7.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-8 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/8.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/8.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
   background-position: center;
 }
 
 .carousel-cell-9 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/9.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/9.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
 
 .carousel-cell-10 {
-  width: 50%;
-  height: 55vh;
-  margin-right: 30px;
-  background-image: url(../../assets/images/NewPage/Proyects/10.png);
-   background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/10.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #8a9597;
-    border-radius: 10px;
 }
+
+.carousel-cell-11 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/11.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-cell-12 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/12.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .carousel-panners {
   background: transparent;
-  height: 20vh;
+  height: 30vh;
 }
 
  .carousel-panners-1 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/+check-en-blanco.png);
-  background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/13.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-2 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/5.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/14.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-3 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/wayne.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/15.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-4 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/waka.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/16.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-5 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/logo-light.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/17.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-6 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/sqlapiomed.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/18.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carousel-panners-7 {
-  width: 10%;
-  height: 20vh;
-  margin: 0 80px;
-  background-image: url(../../assets/images/NewPage/logo-piedy.png);
-   background-size: contain;
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/19.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.carousel-panners-8 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/20.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-panners-9 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/21.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-panners-10 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/22.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-panners-11 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/23.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-panners-12 {
+  width: 30vh;
+  height: 30vh;
+  background-image: url(../../assets/images/NewPage/Products/24.png);
+  counter-increment: carousel-cell;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 
 .flickity-button:hover {
   background: #ffffff3d !important;
@@ -10849,355 +10902,30 @@ div#slider figure {
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
 
-  .carousel {
-    background: transparent;
-    height: 55vh;
+  .mb-container {
+    width: 100% !important;
+    padding: 0 !important;
   }
 
-  .hg-mb {
-    /* height: 45vh !important; */
-  }
-
-  .carousel-cell-1 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/1-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-2 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/2-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-3 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/3-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-4 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/4-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-5 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/5-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-6 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/6-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-7 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/7-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-8 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/8-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-9 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/9-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-10 {
-    width: 80% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/10-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-panners {
-    background: transparent;
-  }
-
-  .carousel-panners-1 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/+check-en-blanco.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-2 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/5.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-3 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/wayne.png);
-     background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-4 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/waka.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-5 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-light.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-6 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/sqlapiomed.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-7 {
-    width: 30%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-piedy.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 @media (max-width: 575px) {
 
-  .carousel {
-    background: transparent;
-    height: 60vh;
+  .img-mb {
+    width: 90% !important;
   }
 
-  .carousel-cell-1 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/1-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
+  .prod-mb {
+    justify-content: space-evenly !important;
   }
 
-  .carousel-cell-2 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/2-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
+  .home-mb {
+    margin-top: -60px !important;
   }
 
-  .carousel-cell-3 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/3-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-4 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/4-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-5 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/5-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-6 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/6-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-7 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/7-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-8 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/8-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-9 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/9-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-10 {
-    width: 90% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/10-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-panners {
-    background: transparent;
-  }
-
-  .carousel-panners-1 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/+check-en-blanco.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-2 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/5.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-3 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/wayne.png);
-     background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-4 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/waka.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-5 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-light.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-6 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/sqlapiomed.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-7 {
-    width: 75%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-piedy.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  .mb-container {
+    width: 100% !important;
+    padding: 0 !important;
   }
 
   .card-header i {
@@ -11215,363 +10943,23 @@ div#slider figure {
   .col-mb {
     top: 65% !important;
   }
-
-  .btn-ingresa img {
-    width: 73% !important;
-  }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
-
-  .carousel {
-    background: transparent;
-    height: 55vh;
-  }
-
-  .carousel-cell-1 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/1-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-2 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/2-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-3 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/3-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-4 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/4-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-cell-5 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/5-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-6 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/6-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-7 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/7-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-8 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/8-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-9 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/9-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-cell-10 {
-    width: 40% !important;
-    margin-right: 10px !important;
-    counter-increment: carousel-cell;
-    background-image: url(../../assets/images/NewPage/Proyects/10-mobile.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .carousel-panners {
-    background: transparent;
-  }
-
-  .carousel-panners-1 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/+check-en-blanco.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-2 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/5.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-3 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/wayne.png);
-     background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-4 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/waka.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-5 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-light.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-6 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/sqlapiomed.png);
-     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-panners-7 {
-    width:20%;
-    margin: 0 80px;
-    background-image: url(../../assets/images/NewPage/logo-piedy.png);
-     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  .mb-container {
+    width: 85%;
   }
 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
+  .mb-container {
+    width: 100% !important;
+    padding: 0 !important;
+  }
 
   .home-mb {
     margin-top: -60px !important;
-}
-.carousel {
-  background: transparent;
-  height: 55vh;
-}
-
-.carousel-cell-1 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/1-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-2 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/2-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-3 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/3-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-4 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/4-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-5 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/5-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-6 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/6-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-7 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/7-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-8 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/8-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-9 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/9-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-cell-10 {
-  width: 60% !important;
-  margin-right: 10px !important;
-  counter-increment: carousel-cell;
-  background-image: url(../../assets/images/NewPage/Proyects/10-mobile.png) !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners {
-  background: transparent;
-}
-
-.carousel-panners-1 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/+check-en-blanco.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-2 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/5.png);
-   background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-3 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/wayne.png);
-   background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-4 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/waka.png);
-   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-5 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/logo-light.png);
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-6 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/sqlapiomed.png);
-   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel-panners-7 {
-  width: 30%;
-  margin: 0 50px;
-  background-image: url(../../assets/images/NewPage/logo-piedy.png);
-   background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 }

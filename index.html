@@ -50,11 +50,12 @@ function googleTranslateElementInit() {
 
   <!-- Document Title
     ============================================= -->
-  <title>Sqlapio.com</title>
+  <title>Tadmass.com</title>
 
   <style>
     body {
       /* overflow-y: hidden; */
+      background: linear-gradient(to bottom right,#0fc7ee59, #49fd6d6b);
     }
 
     section {
@@ -92,7 +93,7 @@ function googleTranslateElementInit() {
       width: 100%;
       height: 100%;
       background-color: #000000eb;
-      color: white;
+      color: black;
       padding: 1.5rem;
       display: flex;
       flex-direction: column;
@@ -126,7 +127,7 @@ function googleTranslateElementInit() {
       /* right: 20px; */
       background-color: transparent;
       color: white;
-      padding: 10px 15px;
+      padding: 10px 0px;
       font-size: 14px;
       z-index: 9999;
     }
@@ -158,11 +159,11 @@ function googleTranslateElementInit() {
     .footer-derecha {
       right: 20px;
     }
-
+/* 
     .map {
       height: 20vh;
       filter: grayscale(100%) invert(92%) contrast(83%);
-    }
+    } */
   </style>
 </head>
 
@@ -206,22 +207,25 @@ function googleTranslateElementInit() {
                 <a onclick="mostrarSeccion('nosotros')" class="dropdown-toggle">nosotros</a>
               </li>
               <li class="nav-item">
-                <a onclick="mostrarSeccion('servicios')" class="dropdown-toggle">servicios</a>
+                <a onclick="mostrarSeccion('mision')" class="dropdown-toggle">misión</a>
               </li>
               <li class="nav-item">
-                <a onclick="mostrarSeccion('proyectos')" class="dropdown-toggle">proyectos</a>
+                <a onclick="mostrarSeccion('vision')" class="dropdown-toggle">visión</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('productos')" class="dropdown-toggle">productos</a>
               </li>
               <li class="nav-item">
                 <a onclick="mostrarSeccion('contacto')" class="dropdown-toggle">contacto</a>
               </li>
             </ul>
-            <div class="module module-search pull-left" style="margin-top: 12px;">
+            <!-- <div class="module module-search pull-left" style="margin-top: 12px;">
               <img width="40" src="assets/images/logo/language.png" alt="sqlapio">
               <a href="https://sqlapio.com" class="dropdown-toggle"
                 style="color: #ffffff; font-weight: 700; padding-left: 6px ">ES</a>
               <a href="https://en.sqlapio.com" class="dropdown-toggle"
                 style="color: #ffffff; font-weight: 700; padding-left: 7px ">EN</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -230,14 +234,12 @@ function googleTranslateElementInit() {
 
   <!-- Banner
 ============================================= -->
-  <section id="inicio" class="hero-2 active home-mb"
-    style="background-image: url(assets/images/NewPage/Diseño\ sin\ título.png); background-size: cover;">
+  <section id="inicio" class="hero-2 active home-mb" style="background-image: url(assets/images/NewPage/4.png); background-size: cover;">
     <div class="item">
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new">
-            <img class="img-responsive img-home-mb" src="assets\images/NewPage/sqlapiotech.png" alt="Background"
-              style="width: 40%;" />
+            <img class="img-responsive img-home-mb" src="assets\images/NewPage/1.png" alt="Background" style="width: 40%;" />
           </div>
         </div>
       </div>
@@ -245,29 +247,21 @@ function googleTranslateElementInit() {
   </section>
 
 
-  <section id="nosotros" class="hero-2" style="padding-top: 0px;">
+  <section id="nosotros" class="hero-2" >
     <div class="item">
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new">
-            <div class="col-xs-12 col-sm-12 col-md-4">
-              <img src="assets\images/NewPage/titulos.png" alt="Background" style="width: 60%; padding-bottom: 20px;" />
-              <p>
-                En un mundo cada vez más conectado, la tecnología impulsa el crecimiento y la eficiencia de los
-                negocios. En <strong>Sqlapio Technology</strong>,
-                desarrollamos software a medida, creando soluciones digitales <strong>innovadoras, eficientes y
-                  escalables</strong>.
-              </p>
-              <p>
-                Trabajamos con empresas de todos los tamaños, apoyando su <strong>transformación digital</strong> con
-                creatividad, estrategia y tecnología.
-                Nuestro equipo se enfoca en generar <strong>resultados reales</strong>, adaptándose a cada cliente y
-                creando soluciones que <strong> marcan la diferencia</strong>.
-              </p>
+            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs" style="display: flex; justify-content: flex-start;">
+              <img src="assets\images/NewPage/7.png" alt="Background" style="width: 76%;" />
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs"
-              style="display: flex; justify-content: flex-end;">
-              <img src="assets\images/NewPage/a.png" alt="Background" style="width: 90%;" />
+            <div class="col-xs-12 col-sm-12 col-md-5">
+              <img src="assets\images/NewPage/nosotros.png" alt="Background" style="width: 200px; padding-bottom: 20px;" />
+              <p style="color: black; text-align: justify;">
+              TADMASS C.A una empresa del sector salud, dedicada a la venta y distribución de productos médicos al mayor, debidamente registrados ante el Ministerio del Poder Popular para la Salud MPPS y los diferentes entes correspondientes que garantizan la salud de nuestra sociedad Venezolana.
+              <br><br>
+              Contamos con los mejores equipos médicos, material quirúrgico, materiales descartables, medicamentos, gases de uso medicinal e industrial, reactivos químicos para laboratorios, servicios de instalación, mantenimiento preventivo y correctivo de equipos que forman parte de la dotación del sistema de salud pública y privada de nuestro País.
+              </p>
             </div>
           </div>
         </div>
@@ -275,27 +269,19 @@ function googleTranslateElementInit() {
     </div>
   </section>
 
-  <section id="servicios" class="hero-2" style="padding-top: 0px;">
+  <section id="mision" class="hero-2" >
     <div class="item">
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <img src="assets\images/NewPage/b.png" alt="Background" style="width: 90%;" />
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <img src="assets\images/NewPage/titulos2.png" alt="Background"
-                style="width: 60%; padding-bottom: 20px;" />
-
-              <p>
-                <strong>• Desarrollo Web y Móvil</strong> – Aplicaciones rápidas, seguras y escalables.<br>
-                <strong>• E-commerce</strong> – Tiendas en línea con integración de pagos.<br>
-                <strong>• Automatización y IA</strong> – Optimizamos procesos con inteligencia artificial.<br>
-                <strong>• Diseño UX/UI</strong> – Experiencias visuales atractivas y funcionales.<br>
-                <strong>• Mantenimiento y Soporte</strong> – Actualizaciones y optimización constante.<br>
+            <div class="col-xs-12 col-sm-12 col-md-5">
+              <img src="assets\images/NewPage/mision.png" alt="Background" style="width: 150px; padding-bottom: 20px;" />
+              <p style="color: black; text-align: justify;">
+                Como Empresa integrante del Sistema Nacional de Salud, TADMASS MEDICAL C.A., ha establecido como misión básica, contribuir al mejoramiento substancial de la distribución y suministro de medicamentos, material médico quirúrgico y gases medicinales a nivel nacional, especialmente en los centros hospitalarios, buscando una adecuada y oportuna respuesta en tiempo, calidad y costos que garantice una relación comercial duradera y exitosa con nuestros clientes y que contribuya al crecimiento de nuestro país.
               </p>
-
-              <p>Creamos soluciones digitales que se adaptan a tus necesidades. 🚀</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs" style="display: flex; justify-content: flex-end;">
+              <img src="assets\images/NewPage/5.png" alt="Background" style="width: 76%;" />
             </div>
           </div>
         </div>
@@ -303,231 +289,101 @@ function googleTranslateElementInit() {
     </div>
   </section>
 
-  <section id="proyectos" class="hero-2"
-    style="z-index: 2; padding: 0px; display: flex; flex-direction: column; height: 100vh; justify-content: center;">
-    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false}' style="margin-top: 30px;">
-      <div class="carousel-cell-1">
-        <!-- panel administrativo -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Panel Administrativo 📊</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Diseñado para gestionar de forma integral las ventas, clientes y personal, este sistema incorpora módulos 
-              avanzados de control de inventario y generación de reportes. Esto permite una visión clara y en tiempo real de 
-              los recursos, insumos y el desempeño general del negocio, facilitando la toma de decisiones y optimizando 
-              la gestión operativa diaria</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-2">
-        <!-- tienda -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Aplicación de Tienda 🏛</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Gestiona tu negocio de forma inteligente desde una sola plataforma.<br>
-              El sistema te permite registrar y administrar clientes, agendar citas con recordatorios automáticos, 
-              asignar servicios al personal, facturar eficientemente y controlar la distribución de productos dentro del equipo.<br>
-              Diseñado para mejorar la experiencia de tus usuarios y simplificar la operación diaria de tu 
-              tienda, todo desde una interfaz moderna, ágil y fácil de usar.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-3">
-        <!-- page piedy -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/logo_sf.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Landing Page Piedy💻</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Este proyecto tiene como objetivo potenciar la imagen digital de la empresa, mostrar sus servicios de forma clara, atractiva y 
-              profesional, y crear canales de contacto directos y eficientes con sus clientes.<br>
-
-              Una herramienta estratégica pensada para generar confianza, atraer nuevos prospectos y convertir visitas en oportunidades comerciales reales.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-4">
-        <!-- page trx -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Landing Page TRX💻</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Este proyecto busca fortalecer la imagen digital de la empresa mediante una página web moderna y funcional, 
-              que comunique sus servicios de forma clara y atractiva, y facilite la interacción directa con sus clientes.<br>
-
-              Una solución pensada para mejorar la visibilidad en línea, captar nuevos clientes potenciales y transformar el tráfico web en oportunidades reales de negocio.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-5">
-        <!-- trx sys -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-              <h3 style="color: #8a9597;">Gestión de Proyectos 💼🛠️</h3>
-              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-                Diseñado para gestionar de forma integral los proyectos de mantenimiento y climatización, este sistema incorpora módulos 
-                especializados para el seguimiento de actividades, control de recursos, personal técnico e inventario de equipos.<br>
-
-                Permite una visión clara y en tiempo real del avance de obras, consumo de insumos y desempeño operativo, facilitando la 
-                toma de decisiones técnicas y administrativas y optimizando cada fase del proceso, desde la planificación hasta la ejecución.
+  <section id="vision" class="hero-2" >
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs" style="display: flex; justify-content: flex-start;">
+              <img src="assets\images/NewPage/6.png" alt="Background" style="width: 76%;" />
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5">
+              <img src="assets\images/NewPage/vision.png" alt="Background" style="width: 150px; padding-bottom: 20px;" />
+              <p style="color: black; text-align: justify;">
+                Como estrategia de desarrollo, estamos orientados a seguir manteniéndonos en el mercado como líderes en la distribución de Medicamentos, Material Médico Quirúrgico y Gases Medicinales a nivel nacional, garantizando la disponibilidad cierta y oportuna de los insumos requeridos por los centros hospitalarios, así como la calidad y seguridad de los productos que ofrecemos, mejorando gradualmente las condiciones y tiempos de compra-venta y distribución de los mismos.
+                <br>
+                <br>
+                Estamos constantemente revisando y supervisando nuestros procesos (estructura, políticas, procedimientos), actualizando los sistemas de información, capacitándonos y mejorando el personal, realizando las ampliaciones y adecuaciones de las instalaciones, equipos, inventarios y recursos financieros con la finalidad de ofrecer el mejor servicio y la mejor atención a nuestros clientes.
               </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-cell-10">
-        <!-- infosis trx -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/unnamed.png" alt="Background" style="width: 200px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Gestión de Actividades y personal 👷🏻‍♂️👷🏻‍♀️</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Este sistema está diseñado para gestionar de forma integral las actividades y el personal técnico involucrado en labores de mantenimiento. 
-              Permite llevar el control por áreas, así como intervenciones específicas en sistemas eléctricos y de climatización, 
-              registrando el avance de cada trabajo.<br> 
-              Además, incorpora un sistema de control de asistencia mediante escaneo de código QR basado en geolocalización, 
-              lo que permite verificar en tiempo real la presencia del personal en el lugar de trabajo, garantizando mayor precisión 
-              y confiabilidad en la gestión operativa.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-6">
-        <!-- sqlapio page -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
-              <h3 style="color: #8a9597;">Landing Page SQLapio 🏥💻</h3>
-              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-                Este proyecto tiene como propósito presentar un sistema médico moderno y confiable, diseñado para optimizar la
-                 gestión de pacientes, citas, historiales clínicos y procesos administrativos.<br>
-                La página web actúa como una vitrina digital que comunica claramente los beneficios del sistema, genera confianza en 
-                profesionales de la salud y facilita el contacto con clínicas o centros médicos interesados en digitalizar su operación.
-              </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-7">
-        <!-- sql med -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">SQLapio Médico 🩺</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Optimiza la rutina diaria del profesional de salud.<br>
-              Con SQLapio Médico, los doctores pueden gestionar fácilmente la información de sus pacientes, registrar datos personales, 
-              historias clínicas, consultas y exámenes físicos, y generar informes detallados para cada atención.<br>
-              Una herramienta intuitiva y eficiente, diseñada para facilitar el trabajo clínico y mantener todo organizado en un solo lugar.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-8">
-        <!-- sql pacientes -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/sqlmed2.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
-              <h3 style="color: #8a9597;">SQLapio Paciente 👨‍⚕️</h3>
-              <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-                Toda tu información médica, siempre a tu alcance.<br>
-  
-                Con SQLapio Paciente, los usuarios pueden acceder de forma segura a su historia clínica, 
-                consultas médicas, exámenes físicos y estudios indicados por el médico, incluyendo la fecha y hora de sus próximas citas.<br>
-  
-                Una plataforma pensada para que el paciente esté informado, conectado y en control de su salud.
-              </p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell-9">
-        <!-- checkmas -->
-        <div class="card">
-          <div class="overlay">
-            <img class="img-responsive" src="assets\images/NewPage/+check.png" alt="Background" style="width: 400px; padding-bottom: 2%;" />
-            <h3 style="color: #8a9597;">Gestión de Proyectos 🛠️</h3>
-            <p style="color: #fff; font-weight: 400; text-align: center; font-size: large; width: 70%;">
-              Optimiza el control total de tus proyectos técnicos desde una sola plataforma.<br>
-
-              Nuestro sistema está diseñado para empresas que gestionan obras de mantenimiento preventivo, correctivo y climatización, 
-              permitiendo un control preciso de cada etapa del proceso: desde la planificación y asignación de personal, hasta el 
-              seguimiento de actividades, inventario de equipos y análisis de costos.
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-    <div class="container" style="width: 90%; margin-top: 44px;">
-      <div class="carousel-panners"
-        data-flickity='{"wrapAround": true, "autoPlay": 2000, "pageDots": false}'>
+  </section>
+
+  <section id="productos" class="hero-2 prod-mb" style="z-index: 2; padding: 0; display: flex; flex-direction: column; height: 100vh; justify-content: space-evenly; background-image: url(assets/images/NewPage/4.png); background-size: cover;">
+    <div class="container mb-container" style="width: 90%;">
+      <img src="assets\images/NewPage/eqMedico.png" alt="Background" style="width: 300px; padding: 20px 0 15px 40px;" />
+      <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": 5000, "pageDots": false}'>
+        <div class="carousel-cell-1"></div>
+        <div class="carousel-cell-2"></div>
+        <div class="carousel-cell-3"></div>
+        <div class="carousel-cell-4"></div>
+        <div class="carousel-cell-5"></div>
+        <div class="carousel-cell-6"></div>
+        <div class="carousel-cell-7"></div>
+        <div class="carousel-cell-8"></div>
+        <div class="carousel-cell-9"></div>
+        <div class="carousel-cell-10"></div>
+        <div class="carousel-cell-11"></div>
+        <div class="carousel-cell-12"></div>
+        <!-- <div class="carousel-cell-13"></div> -->
+      </div>
+    </div>
+
+    <div class="container mb-container" style="width: 90%; margin-top: 20px;">
+      <img src="assets\images/NewPage/materiaM.png" class="img-mb" alt="Background" style="width: 450px; padding: 0 0 15px 40px;" />
+      <div class="carousel-panners" data-flickity='{"wrapAround": true, "autoPlay": 5000, "pageDots": false}'>
         <div class="carousel-panners-1"></div>
         <div class="carousel-panners-2"></div>
         <div class="carousel-panners-3"></div>
         <div class="carousel-panners-4"></div>
         <div class="carousel-panners-5"></div>
-        <div class="carousel-panners-6"></div>
+        <div class="carousel-panners-6"></div>  
         <div class="carousel-panners-7"></div>
+        <div class="carousel-panners-8"></div>
+        <div class="carousel-panners-9"></div>
+        <div class="carousel-panners-10"></div>
+        <div class="carousel-panners-11"></div>
+        <div class="carousel-panners-12"></div>
       </div>
     </div>
   </section>
-  <section id="contacto" class="hero-2" style="z-index: 2; padding-top: 0px; background-image: url(assets/images/NewPage/Diseño\ sin\ título.png); background-size: cover;">
+  <section id="contacto" class="hero-2" style="z-index: 2; padding-top: 0px; background-image: url(assets/images/NewPage/4.png); background-size: cover;">
     <div class="row contact-mb" style="padding: 0 8%;">
       <div class="col-xs-12 col-sm-12 col-md-12" style="height: 100vh;display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
         <div class="col-xs-12 col-sm-12 col-md-12 widgets-contact" style="font-size: 12px; padding-top: 30px; padding-bottom: 0;">
           <div class="widget" style="margin-top: 41px; padding-left: 0px !important;">
-            <div class="widget-contact-info" style="color: #fff; margin-top: 41px;">
+            <div class="" style="color: #2f2f2f; margin-top: 41px;">
               <!-- <img src="assets/images/email.png" style="width: 60px;"> -->
-              <h4 class="text-capitalize" style="color: #fff; font-weight: bold; margin-left: 0px;">CORREO</h4>
-              <p class="font-heading text-uppercase" style="color: #fff; font-weight: 900; margin-left: 0px; font-size: 13px;">
-                <a href="mailto:soporte@sqlapio.com" style="color: #fff; font-weight: 900; margin-left: 0px;">soporte@sqlapio.com</a>
+              <img src="assets\images/NewPage/correo.png" alt="Background" style="width: 90px; padding-bottom: 20px;" />
+              <p class="font-heading text-uppercase" style="color: #2f2f2f; font-weight: 900; margin-left: 0px; font-size: 13px;">
+                <a href="mailto:soporte@sqlapio.com" style="color: #2f2f2f; font-weight: 900; margin-left: 0px;">111@111.com</a>
               </p>
             </div>
           </div>
-          <hr style="color: #9e9e9e;">
+          <hr style="color: #0dc3ee; border-top: 1px solid #0ab8f6;">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-          <h4 class="text-capitalize" style="color: #fff; font-weight: bold; margin-left: 0px;">NUESTRAS OFICINAS</h4>
-          <div class="col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 15px;">
+          <img src="assets\images/NewPage/nuestraO.png" alt="Background" style="width: 220px; padding-bottom: 20px;" />
+          <div class="col-xs-12 col-sm-12 col-md-12" style="margin-bottom: 15px;">
             <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
-              src="https://maps.google.com/maps?q=USA3785%20NW%2082%20AV%20SUITE%20215%20Doral%20FLORIDA%2033166&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=AV CAURIMARE CON CALLE CHAMA CC CARONI NIVEL PB MODULO C LOCAL C-19 URB COLINAS DE BELLO MONTE&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
               tabindex="0"></iframe>
-            <h4 style="color: #fff; margin-bottom: 0px;">ESTADOS UNIDOS</h4>
-            <hr style="color: #9e9e9e; margin-top: 0px;">
-            <span style="text-align: start; color: #fff;">
-              <i class="fa fa-map-marker" style="color: #fff;" aria-hidden="true"></i> <strong>Dirección:</strong> 3785
-              NW 82 AV SUITE 215 Doral FLORIDA 33166, ESTADOS UNIDOS
+              
+            <h4 style="color: #2f2f2f; margin-bottom: 0px;">VENEZUELA</h4>
+            <hr style="color: #0dc3ee; margin-top: 0px; border-top: 1px solid #0ab8f6;">
+            <span style="text-align: start; color: #2f2f2f;">
+              <i class="fa fa-map-marker" style="color: #2f2f2f;" aria-hidden="true"></i> <strong>Dirección:</strong> 
+              Av. Caurimare con calle chama CC. Caroni Nivel PB Modulo C Local C-19 Urb. Colinas de Bello Monte. Caracas, Venezuela
             </span>
-            <span style="text-align: start; color: #fff;">
+            <span style="text-align: start; color: #2f2f2f;">
               <br>
               <br>
-              <i class="fa fa-phone" style="color: #fff;" aria-hidden="true"></i> <strong>Teléfono: </strong> +1
-              305.956.81.20
-            </span>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 15px;">
-            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;" width="100%" height="350"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Xpress%20Macaracuay&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-              style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4 style="color: #fff; margin-bottom: 0px;">VENEZUELA</h4>
-            <hr style="color: #9e9e9e; margin-top: 0px;">
-            <span style="text-align: start; color: #fff;">
-              <i class="fa fa-map-marker" style="color: #fff;" aria-hidden="true"></i> <strong>Dirección:</strong>
-              Centro Comercial Xpress - Macaracuay. Torre Principal, Oficina 7,
-              Piso 7 1071, Caracas Venezuela.
-            </span>
-            <span style="text-align: start; color: #fff;">
-              <br>
-              <br>
-              <i class="fa fa-phone" style="color: #fff;" aria-hidden="true"></i> <strong>Teléfono: </strong> +58 414
-              736.53.09 / +58 212 793.97.39
+              <i class="fa fa-phone" style="color: #2f2f2f;" aria-hidden="true"></i> <strong>Teléfono: </strong> 
+              +
             </span>
           </div>
         </div>
@@ -538,14 +394,14 @@ function googleTranslateElementInit() {
   </section>
 
   <div class="fixed-footer superior-izquierda" style="z-index: 0">
-    <img src="assets/images/NewPage/sqlapiotech.png" style="width: 20%">
+    <img src="assets/images/NewPage/2.png" style="width: 5%">
   </div>
 
   <!-- Footer 
 ============================================= -->
   <footer>
     <div class="fixed-footer footer-derecha diagonal">
-      <span style="font-size: 10px;">© 2025 Copyright: All rights reserved.</span>
+      <span style="font-size: 10px; color: black;">© 2025 Copyright: All rights reserved.</span>
     </div>
     <div class="fixed-footer footer-izquierda">
       <div class="widget-social-icon pull-none-xs text-center" style="display: flex; justify-content: center; flex-direction: column;">
